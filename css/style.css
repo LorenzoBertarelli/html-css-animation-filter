@@ -104,18 +104,34 @@
 
 .ex-10-icon {
     font-size: 60px;
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
-    animation: infinite linear;
+    animation: ruota10 1s infinite linear;
 }
 
-
+@keyframes ruota10 {
+    0% {
+        transform: rotate(1turn);
+    }
+}
 
 .ex-11-icon {
     font-size: 60px;
+    animation: ruota11 1s infinite linear;
 }
+
+@keyframes ruota11 {
+    0% {
+        transform: rotate(0);
+    }
+
+    90% {
+        transform: rotate(270deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -128,7 +144,15 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
+    animation: ruota12 1s infinite linear;
 }
+
+@keyframes ruota12 {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -137,6 +161,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
